@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="王龙飞ailiucuishan"      设置文字
+        android:textColor="#000000"            
+        android:textSize="24sp"               文字大小
+        />
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"                  每一行最大文字长度
+        android:ellipsize="end"                多余文字显示为...
+        android:text="王龙飞ailiucuishan"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="筛选"
+        android:drawableRight="@drawable/ic_launcher_background" 文字右边+图片
+        android:drawablePadding="10dp"                           图片距离文字的距离
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/tv_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="王龙飞ailiucuishan"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="王龙飞ailiucuishan"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="王龙飞ailiucuishan王龙飞ailiucuishan王龙飞ailiucuishan王龙飞ailiucuishan"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:singleLine="true"             设置跑马灯
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"  循环次数（一直）
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+</LinearLayout>
