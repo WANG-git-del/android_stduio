@@ -1,0 +1,24 @@
+package com.example.myapplication;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Paint;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class TexiViewActivity extends AppCompatActivity {
+
+    private TextView mTav4,mTav5;              //声明
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_texi_view);
+        mTav4 = (TextView) findViewById(R.id.tv_4);//找到目标
+        mTav4.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);//中划线
+        mTav4.getPaint().setAntiAlias(true);// 去除锯齿
+
+        mTav5 = (TextView)findViewById(R.id.tv_5);
+        mTav5.getPaint().setFlags(Paint.UNDERLINE_TEXT_FLAG);//下划线
+
+    }
+}
