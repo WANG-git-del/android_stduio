@@ -1,0 +1,39 @@
+# bg_btn2
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">    # 定义形状，圆边，实心
+    <solid
+        android:color="#FF9900"/>  
+    <corners
+        android:radius="5dp"/>    #圆边弧度大小
+
+</shape>
+
+# bg_btn3
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">  # 定义形状，圆边，空心
+    <stroke
+        android:width="10dp"
+        android:color="#FF9900"/>
+    <corners
+        android:radius="5dp"/>
+
+</shape>
+
+# bg_btn4
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">         # 点击后按钮颜色发生变化
+        <shape>
+            <solid android:color="#AA6600"/>
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+    <item android:state_pressed="false">
+        <shape>
+            <solid android:color="#FF9900"/>
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+</selector>
